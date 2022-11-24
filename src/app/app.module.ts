@@ -8,6 +8,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { MenuComponent } from './menu/menu.component';
 import { BreakfastComponent } from './breakfast/breakfast.component';
 import { JuiceComponent } from './juice/juice.component';
+import { RiceComponent } from './rice/rice.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { JuiceComponent } from './juice/juice.component';
     SignUpComponent,
     MenuComponent,
     BreakfastComponent,
-    JuiceComponent
+    JuiceComponent,
+    RiceComponent
   ],
   imports: [
     BrowserModule,
