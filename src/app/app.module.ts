@@ -9,6 +9,35 @@ import { MenuComponent } from './menu/menu.component';
 import { BreakfastComponent } from './breakfast/breakfast.component';
 import { JuiceComponent } from './juice/juice.component';
 import { RiceComponent } from './rice/rice.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:LoginComponent
+  },
+  {
+    path:"menu",
+    component:MenuComponent
+  },
+  {
+    path:"breakfast",
+    component:BreakfastComponent
+  },
+  {
+    path:"juice",
+    component:JuiceComponent
+  },
+  {
+    path:"meals",
+    component:RiceComponent
+  },
+  {
+    path:"register",
+    component:SignUpComponent
+  }
+] 
 
 @NgModule({
   declarations: [
@@ -18,11 +47,13 @@ import { RiceComponent } from './rice/rice.component';
     MenuComponent,
     BreakfastComponent,
     JuiceComponent,
-    RiceComponent
+    RiceComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
